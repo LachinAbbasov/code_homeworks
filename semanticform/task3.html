@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegisterForm2</title>
+</head>
+
+<body>
+    <form action="">
+        <h1>Event Registration Form</h1><br>
+        Personal Information <br>
+        <hr>
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" id="name" minlength="3" required /><br>
+        <label for="email">Email Adress:</label>
+        <input type="email" placeholder="enter your email adress" id="email" name="mail" required><br>
+        <label for="tel">Phone Number</label>
+        <input type="tel" name="tel" id="tel" required>
+        <hr>
+        <hr>
+        Event Detail <br>
+        <hr>
+        <label for="ename">Event Name:</label>
+        <input type="text" name="ename" id="ename" minlength="3" required /><br>
+        <label for="date">Event Date:</label>
+        <input type="date" name="date" id="date"><br>
+        <label for="location">Event Location</label>
+        <input type="text" id="location" name="location" required>
+        <hr>
+        <hr>
+        Ticket Selection <br>
+        <hr>
+        <label for="cho">Choose Ticket Type:</label><br>
+        <input type="radio" name="choose" id="cho">
+        <label for="cho">Standard</label><br>
+        <input type="radio" name="choose" id="cho">
+        <label for="cho">VIP</label><br>
+        <label for="quantity">Quantity:</label>
+        <input type="text" id="quantity" name="quantity" required>
+        <hr>
+        <hr>
+        Dietary Preferences <br>
+        <label for="?">Do you have any dietary preferences?</label><br>
+        <input type="checkbox" name="check" id="?">
+        <label for="?">Vegetarian</label><br>
+        <input type="checkbox" name="check" id="?">
+        <label for="?">Vegan</label><br>
+        <input type="checkbox" name="check" id="?">
+        <label for="?">Gluten-Free</label>
+        <hr>
+
+
+        <label for="mesagge">Additional Comments:</label><br>
+
+        <textarea name="text" id="mesagge" cols="50" rows="5"></textarea><br>
+        <input type="checkbox" id="term" name="checkbox" required>
+        <label for="term">I agree to the terms and conditions</label><br>
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegisterForm</title>
+</head>
+
+<body>
+    <form action="">
+        <h1>Registration Form</h1><br>
+        Personal Information <br>
+        <hr>
+        <label for="name">First Name:</label>
+        <input type="text" type="text" placeholder="Firs Name" name="name" id="name" minlength="3" required /><br>
+        <label for="surname">Last Name:</label>
+        <input type="text" type="text" placeholder="Surname" name="surname" id="surname" minlength="3" required /><br>
+        <label for="age">Age:</label>
+        <input type="age" id="age" name="age" max="100" min="0" required /><br>
+        <label for="gender">Gender:</label>
+        <select name="gender" id="gender">
+            <option value="ml">Male</option>
+            <option value="fml">Famale</option>
+        </select>
+        <hr>
+        <hr>
+        Contact Information <br>
+        <label for="email">Email Adress:</label>
+        <input type="email" placeholder="enter your email adress" id="email" name="mail" required><br>
+        <label for="pas">Password:</label>
+        <input type="password" name="Şifrə" id="pas" placeholder="Ab23cd12"><br>
+        <label for="coun">Country:</label>
+        <select name="olkeler" id="coun" required>
+            <option disabled><b>Europe</b></option>
+            <option value="">France</option>
+            <option value="">Germany</option>
+            <option value="">Italy</option>
+            <option disabled=""><b>Asia</b></option>
+            <option value="">China</option>
+            <option value="">India</option>
+            <option value="">Japan</option>
+            <option disabled value=""><b>Other</b></option>
+            <option value="">United States</option>
+            <option value="">Canada</option>
+            <option value="">United Kingdom</option>
+        </select>
+        <hr>
+        <hr>
+        Address Information <br>
+        <label for="adr">Address:</label>
+        <input type="text" id="adr" name="address" required><br>
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required><br>
+        <label for="code">Postal Code:</label>
+        <input type="number" name="postal" id="code" required><br>
+        <label for="tel">Phone Number</label>
+        <input type="tel" name="tel" id="tel" required>
+        <hr>
+
+        <label for="mesagge">Additional Comments:</label>
+
+        <textarea name="text" id="mesagge" cols="50" rows="5"></textarea><br>
+        <input type="checkbox" id="term" name="checkbox" required>
+        <label for="term">Subscribe to our newsletter</label><br>
+        <button type="submit">Register</button>
+    </form>
+
+</body>
+
+</html>
