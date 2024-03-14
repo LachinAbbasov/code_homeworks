@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border-style: border-box
+}
+
+
+
+.parent{
+font-family:'Madimi One';
+
+
+
+
+
+}
+
+
+.panda{
+    background-color: gray;
+    color: 1px solid black ;
+}
