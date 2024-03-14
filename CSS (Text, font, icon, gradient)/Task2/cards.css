@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+}
+
+.first {
+    font-family: 'Montserrat';
+    margin: 300px auto;
+    padding: 120px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 78%);
+
+}
+
+h1 {
+    font-style: normal;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.second {
+    margin: 50px auto;
+   
+}
+
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 100px;
+    font-size: larger;
+    background: hsl(0, 0%, 78%);
+    flex-direction: row;
+    color: #551a8b;
+
+}
+
+
+ul li {
+    display: block;
+    background-color: lightgray;
+    border: 5px solid #551a8b;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    flex-direction: column;
+    padding: 10px;
+}
+li:hover{
+    background-color: pink;
+    color: white;
+}
+
+.twit {
+    font-size: 50px;
+    padding: 10px;
+}
+
+#tw {
+    padding: 10px;
+    font-size: 30px;
+    font-style: larger;
+    color: 30px black;
+    font-weight: bold;
+}
+.twit:hover{
+    color: white;
+}
+
+.insta {
+    font-size: 50px;
+    padding: 10px;
+
+
+}
+
+#in {
+    padding: 10px;
+    font-size: 30px;
+    font-style: larger;
+    color: 30px black;
+    font-weight: bold;
+
+
+}
+.insta:hover{
+    color: white;
+}
+
+.yt {
+    font-size: 50px;
+    padding: 10px;
+
+
+}
+
+#you {
+    padding: 10px;
+    font-size: 30px;
+    font-style: larger;
+    color: 30px black;
+    font-weight: bold;
+
+}
+.yt:hover{
+    color: white;
+}
+
+.one {
+    border: 10px solid black;
+    height: 40px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 20px;
+    font-size: medium
+}
+.one:hover{background-color: white;
+color: pink;
+border:5px solid white;}
+.two {
+    border: 10px solid black;
+    height: 40px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 20px;
+    font-size: medium
+}
+.two:hover{background-color: white;
+    color: pink;
+    border:5px solid white;
+}
+
+.three {
+    border: 10px solid black;
+    height: 40px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 20px;
+    font-size: medium
+}
+.three:hover{background-color: white;
+    color: pink;
+    border:5px solid white;
+}

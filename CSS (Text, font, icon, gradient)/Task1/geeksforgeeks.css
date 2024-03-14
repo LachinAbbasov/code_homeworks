@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border-style: border-box;
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto;
+    width: 1000px;
+    height: 800px;
+
+    border: 5px solid rgba(136, 243, 14, 0.671);
+    background: rgba(212, 107, 46, 0.205);
+    background-image: linear-gradient(90deg, rgba(212, 107, 46, 0.39) 13%, rgba(91, 9, 121, 0.325) 25%, rgba(130, 22, 117, 0.308) 56%, rgba(111, 33, 137, 0.304) 70%, rgba(52, 49, 148, 0.337) 84%, rgba(0, 213, 255, 0.397) 100%), url(https://www.azernews.az/media/2018/02/28/sweets2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 10px 10px 100px rgba(10, 218, 34, 0.671);
+    transition: 300ms;
+}
+
+.parent:hover {
+    background-image: url(https://www.azernews.az/media/2018/02/28/sweets2.jpg)
+}
+
+.text {
+
+    margin: 0px auto;
+    color: white;
+    font-style: normal;
+    font-size: 100px
+}

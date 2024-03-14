@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+}
+
+.parent {
+    border: 5px solid lightblue;
+    border-radius: 10px;
+}
+
+.first {
+    background-color: aqua;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0;
+    padding: 100px 0px 100px;
+}
+
+.profile {
+    vertical-align: top;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0px auto;
+    box-shadow: 10px 10px 15px black;
+}
+
+.name {
+    background: white;
+    font-family: 'Oswald';
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    font-size: 40px;
+    letter-spacing: 10px;
+}
+
+#west {
+    background-color: rgb(0, 119, 247);
+    color: black;
+    border: 5px solid rgb(137, 135, 135);
+    border-radius: 30px;
+    font-size: 50px;
+    text-overflow: initial;
+
+}
