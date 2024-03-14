@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    border-style: border-box;
+}
+
+.common {
+    border: 5px solid black;
+    background-color: white;
+    border-radius: 39px;
+    width: 1073px;
+    height: 117px;
+    padding: 1px;
+    margin: 49px auto;
+    position: relative;
+    display: flex;
+
+}
+
+.one {
+    background-color: yellow;
+    width: 80px;
+    height: 80px;
+    margin: 15px 64px;
+    position: absolute;
+
+
+}
+
+.two {
+    background-color: yellow;
+    width: 528px;
+    height: 100px;
+    position: absolute;
+    left: 247px;
+    margin: 8px 4px;
+    display: flex;
+
+}
+
+.leftbox {
+    background-color: blue;
+    width: 154px;
+    height: 50px;
+    margin: 30px 10px;
+    position: absolute;
+    bottom: -30px;
+}
+
+.redbox {
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 0px;
+
+
+}
+
+.centerbox {
+    background-color: blue;
+    width: 154px;
+    height: 50px;
+    margin: 22px 10px;
+    position: absolute;
+    bottom: -22px;
+    left: 36%;
+}
+
+.rightbox {
+    background-color: blue;
+    width: 110px;
+    height: 51px;
+    margin: 30px 10px;
+    position: absolute;
+    bottom: -30px;
+    right: -6px;
+}
+
+.three {
+    background-color: yellow;
+    width: 125px;
+    height: 105px;
+    position: absolute;
+    right: 31px;
+    margin: 5px;
+}
+.greenborder{
+    border: 5px solid lightgreen;
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 13px;
+    margin: 11px;
+}
