@@ -1,0 +1,258 @@
+.container {
+    width: 80%;
+    margin: 0 20px;
+    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: calc(100% / 12 * 1);
+    padding: 0 16px;
+}
+
+.col-2 {
+    width: calc(100% / 12 * 2);
+    padding: 0 16px;
+}
+
+.col-3 {
+    width: calc(100% / 12 * 3);
+    padding: 0 16px;
+}
+
+.col-4 {
+    width: calc(100% / 12 * 4);
+    padding: 0 20px;
+}
+
+.col-5 {
+    width: calc(100% / 12 * 5);
+    padding: 0 16px;
+}
+
+.col-6 {
+    width: calc(100% / 12 * 6);
+    padding: 0 16px;
+}
+
+.col-7 {
+    width: calc(100% / 12 * 7);
+    padding: 0 16px;
+}
+
+.col-8 {
+    width: calc(100% / 12 * 8);
+    padding: 0 16px;
+}
+
+.col-9 {
+    width: calc(100% / 12 * 9);
+    padding: 0 16px;
+}
+
+.col-10 {
+    width: calc(100% / 12 * 10);
+    padding: 0 16px;
+}
+
+.col-11 {
+    width: calc(100% / 12 * 11);
+    padding: 0 16px;
+
+}
+
+.col-12 {
+    width: calc(100% / 12 * 12);
+    padding: 0 16px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1em;
+    margin-top: 20px;
+}
+.ic{width: calc(100% / 12 * 12);
+    padding: 0 16px;
+    display: none;}
+
+
+
+
+
+
+
+
+/* tablet */
+@media only screen and (max-width: 932px) {
+    .col-md-1 {
+        width: calc(100% / 12 * 1);
+        padding: 0 16px;
+    }
+
+    .col-md-2 {
+        width: calc(100% / 12 * 2);
+        padding: 0 16px;
+    }
+
+    .col-md-3 {
+        width: calc(100% / 12 * 3);
+        padding: 0 16px;
+    }
+
+    .col-md-4 {
+        width: calc(100% / 12 * 4);
+        padding: 0 16px;
+    }
+
+    .col-md-5 {
+        width: calc(100% / 12 * 5);
+        padding: 0 16px;
+    }
+
+    .col-md-6 {
+        width: calc(100% / 12 * 6);
+        padding: 12px 238px;
+       
+    }
+
+    .col-md-7 {
+        width: calc(100% / 12 * 7);
+        padding: 0 16px;
+    }
+
+    .col-md-8 {
+        width: calc(100% / 12 * 8);
+        padding: 0 16px;
+    }
+
+    .col-md-9 {
+        width: calc(100% / 12 * 9);
+        padding: 0 16px;
+    }
+
+    .col-md-10 {
+        width: calc(100% / 12 * 10);
+        padding: 0 16px;
+    }
+
+    .col-md-11 {
+        width: calc(100% / 12 * 11);
+        padding: 0 16px;
+
+    }
+
+    #firstsection .col-md-12 {
+        width: calc(100% / 12 * 12);
+        padding: 0 16px;
+        font-size: 50px;
+        font-weight: 700;
+        line-height:w 1em;
+        margin-top: 20px;
+        
+       
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+    .container{justify-content:center ;}
+    .phtab-12{width: calc(100% / 12 * 12);
+        padding: 0 16px;
+        display: none;
+    }
+    .ictab-12{width: calc(100% / 12 * 12);
+        padding: 0 16px;
+        display: block;
+    }
+}
+
+
+@media only screen and (max-width:320px){
+    .col-sm-1 {
+        width: calc(100% / 12 * 1);
+        padding: 0 16px;
+    }
+
+    .col-sm-2 {
+        width: calc(100% / 12 * 2);
+        padding: 0 16px;
+    }
+
+    .col-sm-3 {
+        width: calc(100% / 12 * 3);
+        padding: 0 16px;
+    }
+
+    .col-sm-4 {
+        width: calc(100% / 12 * 4);
+        padding: 0 16px;
+    }
+
+    .col-sm-5 {
+        width: calc(100% / 12 * 5);
+        padding: 0 16px;
+    }
+
+    .col-sm-6 {
+        width: calc(100% / 12 * 6);
+        padding: 0px 16px;
+    }
+
+    .col-sm-7 {
+        width: calc(100% / 12 * 7);
+        padding: 0 16px;
+    }
+
+    .col-sm-8 {
+        width: calc(100% / 12 * 8);
+        padding: 0 16px;
+    }
+
+    .col-sm-9 {
+        width: calc(100% / 12 * 9);
+        padding: 0 16px;
+    }
+
+    .col-sm-10 {
+        width: calc(100% / 12 * 10);
+        padding: 0 16px;
+    }
+
+    .col-sm-11 {
+        width: calc(100% / 12 * 11);
+        padding: 0 16px;
+
+    }
+
+    #firstsection .col-sm-12 {
+        width: calc(100% / 12 * 12);
+        padding: 0 16px;
+        font-size:30px ;
+        font-weight: 700;
+        line-height: 1em;
+        margin-top: 20px;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+    .phmob-12{width: calc(100% / 12 * 12);
+    padding: 0 16px;
+    display: none;
+}
+.icmob-12{width: calc(100% / 12 * 12);
+    padding: 0 16px;
+    display: block
+}
+}
+
