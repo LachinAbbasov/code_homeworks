@@ -123,6 +123,10 @@ hr {
     color: red;
 }
 
+main{
+    position: relative;
+}
+
 #firstsection {
     background: url(https://preview.colorlib.com/theme/gym/img/header-bg.jpg.webp)center;
     background-size: cover;
@@ -141,7 +145,7 @@ hr {
     color: #fff;
     font-size: 60px;
     font-weight: 700;
-    line-height:w 1em;
+    line-height: w 1em;
     margin-top: 20px;
 }
 
@@ -160,42 +164,65 @@ hr {
     left: 0;
     z-index: 2;
 }
-#We-care{
-    margin-top:120px;
-    position: relative;
+
+body #We-care {
+    margin-top: 120px;
+    position: absolute !important;
 }
-.we-offer .offer{
-    font-size:40px;
+
+.we-offer .offer {
+    font-size: 40px;
     text-align: center;
     font-weight: bold;
-    gap: 8px;
+
     color: black;
 
 }
-.we-offer .extremely{
+
+.we-offer .extremely {
     text-align: center;
 }
-.cardoffer{
+
+.cardoffer {
     display: flex;
     justify-content: space-around;
     text-align: center;
-    position: absolute;
+
 
 }
-.cardoffer div{
+
+.cardoffer div {
     border-radius: 10px;
     margin: 100px 0;
     padding: 20px 20px;
     width: 20%;
-    height:30%;
+    height: 30%;
     background-color: whitesmoke;
-    box-shadow:10px 10px 10px 10px rgba(145, 51, 51, 0.445);
-    justify-content:space-evenly ;
-    align-items:space-around ;
-    
+    box-shadow: 10px 10px 10px 20px rgba(174, 12, 12, 0.142);
+    justify-content: space-evenly;
+    align-items: space-around;
+
 
 }
-.page{
+
+.page {
     font-size: x-large;
     color: black;
 }
+
+#form {
+    text-align: center;
+    background-color: red;
+    
+}
+.formss{
+    text-align: center;
+    gap: 10px;
+}
+#calculate{
+    background-color: #fff;
+    border-radius:65px ;
+    overflow: hidden;
+    transform: scaleX(1.5);
+}
+
