@@ -1,0 +1,49 @@
+nav{
+    width: Fixed (1,240px)px;
+height: Hug (48px)px;
+top: 62px;
+left: 100px;
+gap: 40px;
+opacity: 0px;
+
+}
+
+.navbar h1{
+@include text($rob,700,25.2px,30.24px,black);
+text-align: left;
+width: 126px;
+height: 18px;
+top: 57px;
+left: 56px;
+gap: 0px;
+opacity: 0px;
+
+}
+
+    
+
+
+
+
+
+    .pageul{
+    display: flex;
+    list-style: none;
+    margin-top:- 3.65%;
+    margin-left: 12%;
+  
+    li{padding:10px;
+       
+        a{
+        text-decoration: none;
+@include size(37px,22px);
+@include text($sato,400,16px,21.6px,black);
+gap: 0px;
+opacity: 0px;
+text-align: left;
+
+    }  
+    }  
+}
+
+

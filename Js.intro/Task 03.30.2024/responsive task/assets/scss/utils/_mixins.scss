@@ -1,0 +1,13 @@
+@mixin text($f,$w,$fz,$lh,$c){
+    font-family: $f;
+    font-weight: $w;
+    font-size: $fz;
+    line-height: $lh;
+    color: $c;
+}
+
+
+@mixin size($w,$h){
+    width: $w;
+    height: $h;
+}

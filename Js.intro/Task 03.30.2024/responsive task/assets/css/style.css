@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  border-style: border-box;
+}
+
+body {
+  background-color: white;
+  width: 864px;
+  height: 2622px;
+  top: 409px;
+  left: 528px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 9999999;
+}
+
+.signupnow {
+  width: 100%;
+  height: 28px;
+  text-align: center;
+  gap: 0px;
+  opacity: 0px;
+  background: #000000;
+  font-size: small;
+}
+
+.signupnow a {
+  margin-left: 5px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.signup {
+  color: white;
+}
+
+.signupnow a i {
+  padding-left: 30%;
+}
+
+span {
+  padding-left: 20%;
+}
+
+@media (max-width: 198px) {
+  .signupnow a i {
+    display: none;
+  }
+}
+nav {
+  width: Fixed 1, 240px px;
+  height: Hug 48px px;
+  top: 62px;
+  left: 100px;
+  gap: 40px;
+  opacity: 0px;
+}
+
+.navbar h1 {
+  font-family: "Roboto-Mono";
+  font-weight: 700;
+  font-size: 25.2px;
+  line-height: 30.24px;
+  color: black;
+  text-align: left;
+  width: 126px;
+  height: 18px;
+  top: 57px;
+  left: 56px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.pageul {
+  display: flex;
+  list-style: none;
+  margin-top: -3.65%;
+  margin-left: 12%;
+}
+.pageul li {
+  padding: 10px;
+}
+.pageul li a {
+  text-decoration: none;
+  width: 37px;
+  height: 22px;
+  font-family: "Satoshi";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21.6px;
+  color: black;
+  gap: 0px;
+  opacity: 0px;
+  text-align: left;
+}/*# sourceMappingURL=style.css.map */
