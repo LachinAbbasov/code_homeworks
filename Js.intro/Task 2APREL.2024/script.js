@@ -80,24 +80,41 @@
 // console.log(isEqual([1, 2, 3, 4], [1, 2, 3, 4, 5])) -> false
 // console.log(isEqual([1, 2, 3, 4], [1, 2, 3, 4, false])) -> false
 // console.log(isEqual([1, 2, 3, 4, false], [1, 2, 3, 4, false])) -> true
-function isEqual(arr1, arr2) {
-    if (arr1.length !== arr2.length) {
-        return false;
-    }
+// function isEqual(arr1, arr2) {
+//     if (arr1.length !== arr2.length) {
+//         return false;
+//     }
 
-    for (let i = 0; i < arr1.length; i++) {
-        if (arr1[i] !== arr2[i]) {
-            return false;
-        }
-    }
+//     for (let i = 0; i < arr1.length; i++) {
+//         if (arr1[i] !== arr2[i]) {
+//             return false;
+//         }
+//     }
 
-    return true;
-}
+//     return true;
+// }
 
-console.log(isEqual([1, 2, 3, 4], [1, 2, 3, 4]))
-console.log(isEqual([1, 2, 3, 4], [1, 2, 3, 4, 5]))
+// console.log(isEqual([1, 2, 3, 4], [1, 2, 3, 4]))
+// console.log(isEqual([1, 2, 3, 4], [1, 2, 3, 4, 5]))
 
 // 7. Bir string ve bir char qebul eden bir function yazın.Əgər daxil olunmuş char string-də varsa char-ın yerləşdiyi indekslərin cəmini yoxdursa -1 return etsin. Məsələn salam və 'a' daxil olunarsa output 1+3=4 olmalıdır.
+        
+function findIndexSum(str, char) {
+    let indexes = [];
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === char) {
+            indexes.push(i);
+        }
+    }
+    if (indexes.length === 0) {
+        return -1;
+    } else {
+        return indexes.reduce((sum, index) => sum + index, 0);
+    }
+}
+
+console.log(findIndexSum('salam', 'a')); 
+
 
 // 8. Bir function yazın parametr olaraq bir array, bir index və bir string qəbul edir. Və daxil olunmuş indeksə əsasən göndərilmiş string-i həmin array-ə əlavə edib return etsin. Məsələn arqument olaraq - ['a','salam','b','world'], 3, "dev" göndərilərsə o zaman dev string-ini 3cu indekse elave etmelidir, eger gonderilmish indeks array-in uzunlugundan boyuk olarsa o zaman hemin string array-in en sonuna elave edilsin.
 
