@@ -120,15 +120,35 @@
 
 // 9. Bir function yazın, parametr olaraq 2 array qebul edir və bir char qebul edir.gonderilmish char-a esasen hemin iki array-i ve elementlerini birleshdirib bir string olaraq return etmelidir. Meselen -> [1,2] [3,4] '*' gonderilerse output -> 1*2*3*4 string-i olmalidir.
 
-function mergeArraysToString(arr1, arr2, char) {
-    let mergedArray = arr1.concat(arr2); 
-    return mergedArray.join(char); 
-}
+// function mergeArraysToString(arr1, arr2, char) {
+//     let mergedArray = arr1.concat(arr2); 
+//     return mergedArray.join(char); 
+// }
 
-console.log(mergeArraysToString([1, 2], [3, 4], '*')); 
+// console.log(mergeArraysToString([1, 2], [3, 4], '*')); 
 
 
 // 10. Students object-lerinden ibaret bir array-iniz  olsun. student object-inde (name,surname,age,point) deyerleri var.
 // Hemin array-i telebelerin yashina gore azalan sira ile sort edin.
 // Hemin array-i telebelerin point deyerine esasen sort edin.
 // Hemin array-i parametr olaraq qebul eden  bir funtion yazin. Point-i en ashagi olan ve en yuxari olan teleblerin name-lerini bir array-e yigib return edin. (Math class-indan istifade edin)
+let students = [
+    { name: 'Fərid', surname: 'Məmmədov', age: 23, point: 15},
+    { name: 'Abbas', surname: 'Bağırov', age: 35, point: 5 },
+    { name: 'Eyyub', surname: 'Yaqubov', age: 51, point: 95 },
+    { name: 'Laçın', surname: 'Abbasov', age: 21, point: 100 }
+];
+// yaş sırası:
+let sortedByAge = students.sort((a, b) => b.age - a.age);
+console.log("Sorted by age:", sortedByAge);
+// xal sırası:
+let sortedByPoint = students.sort((a, b) => b.point - a.point);
+console.log("Sorted by point:", sortedByPoint);
+
+function getExtremePointsNames(studentsArray) {
+    let sortedStudents = studentsArray.sort((a, b) => a.point - b.point);
+    let lowestPointStudent = sortedStudents[0].name;
+    let highestPointStudent = sortedStudents[sortedStudents.length - 1].name;
+    return [lowestPointStudent, highestPointStudent];
+}
+console.log("Extreme points students:", getExtremePointsNames(students));
