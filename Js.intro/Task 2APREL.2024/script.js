@@ -49,15 +49,30 @@
 // 4. Write a method that clears the array from all unnecessary elements, like false, undefined, empty strings, zero, null.
 // console.log(clear([0, 1, false, 2, undefined, '', 3, null]); -> [1, 2, 3]
 
-function clear(arr) {
-    return arr.filter(item => item);
-}
+// function clear(arr) {
+//     return arr.filter(item => item);
+// }
 
-console.log(clear([0, 1, false, 2, undefined, '', 3, null]));
+// console.log(clear([0, 1, false, 2, undefined, '', 3, null]));
 
 // 5. Write a method that returns a duplicate-free array.
 // console.log(clearDuplicate([1, 2, 1, 2, 3])); -> [1, 2, 3]
 // console.log(clearDuplicate(['a', 2, 'd', 2, 'a', 14, 14, 's', false])); -> ['a', 2, 'd', 14, 's', false]
+function clearDuplicate(arr) {
+    let uniqueArray = [];
+    let seen = new Set();
+    
+    for (let item of arr) {
+        if (!seen.has(item)) {
+            uniqueArray.push(item);
+            seen.add(item);
+        }
+    }
+    
+    return uniqueArray;
+}
+console.log(clearDuplicate([1, 2, 1, 2, 3]));
+console.log(clearDuplicate(['a', 2, 'd', 2, 'a', 14, 14, 's', false]));
 
 
 // 6. Write a function that compares two arrays and returns true if they are identical.
