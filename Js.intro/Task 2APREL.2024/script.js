@@ -99,26 +99,34 @@
 
 // 7. Bir string ve bir char qebul eden bir function yazın.Əgər daxil olunmuş char string-də varsa char-ın yerləşdiyi indekslərin cəmini yoxdursa -1 return etsin. Məsələn salam və 'a' daxil olunarsa output 1+3=4 olmalıdır.
         
-function findIndexSum(str, char) {
-    let indexes = [];
-    for (let i = 0; i < str.length; i++) {
-        if (str[i] === char) {
-            indexes.push(i);
-        }
-    }
-    if (indexes.length === 0) {
-        return -1;
-    } else {
-        return indexes.reduce((sum, index) => sum + index, 0);
-    }
-}
+// function findIndexSum(str, char) {
+//     let indexes = [];
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === char) {
+//             indexes.push(i);
+//         }
+//     }
+//     if (indexes.length === 0) {
+//         return -1;
+//     } else {
+//         return indexes.reduce((sum, index) => sum + index, 0);
+//     }
+// }
 
-console.log(findIndexSum('salam', 'a')); 
+// console.log(findIndexSum('salam', 'a')); 
 
 
 // 8. Bir function yazın parametr olaraq bir array, bir index və bir string qəbul edir. Və daxil olunmuş indeksə əsasən göndərilmiş string-i həmin array-ə əlavə edib return etsin. Məsələn arqument olaraq - ['a','salam','b','world'], 3, "dev" göndərilərsə o zaman dev string-ini 3cu indekse elave etmelidir, eger gonderilmish indeks array-in uzunlugundan boyuk olarsa o zaman hemin string array-in en sonuna elave edilsin.
 
 // 9. Bir function yazın, parametr olaraq 2 array qebul edir və bir char qebul edir.gonderilmish char-a esasen hemin iki array-i ve elementlerini birleshdirib bir string olaraq return etmelidir. Meselen -> [1,2] [3,4] '*' gonderilerse output -> 1*2*3*4 string-i olmalidir.
+
+function mergeArraysToString(arr1, arr2, char) {
+    let mergedArray = arr1.concat(arr2); 
+    return mergedArray.join(char); 
+}
+
+console.log(mergeArraysToString([1, 2], [3, 4], '*')); 
+
 
 // 10. Students object-lerinden ibaret bir array-iniz  olsun. student object-inde (name,surname,age,point) deyerleri var.
 // Hemin array-i telebelerin yashina gore azalan sira ile sort edin.
