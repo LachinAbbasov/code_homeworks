@@ -58,21 +58,21 @@
 // 5. Write a method that returns a duplicate-free array.
 // console.log(clearDuplicate([1, 2, 1, 2, 3])); -> [1, 2, 3]
 // console.log(clearDuplicate(['a', 2, 'd', 2, 'a', 14, 14, 's', false])); -> ['a', 2, 'd', 14, 's', false]
-function clearDuplicate(arr) {
-    let uniqueArray = [];
-    let seen = new Set();
+// function clearDuplicate(arr) {
+//     let uniqueArray = [];
+//     let seen = new Set();
     
-    for (let item of arr) {
-        if (!seen.has(item)) {
-            uniqueArray.push(item);
-            seen.add(item);
-        }
-    }
+//     for (let item of arr) {
+//         if (!seen.has(item)) {
+//             uniqueArray.push(item);
+//             seen.add(item);
+//         }
+//     }
     
-    return uniqueArray;
-}
-console.log(clearDuplicate([1, 2, 1, 2, 3]));
-console.log(clearDuplicate(['a', 2, 'd', 2, 'a', 14, 14, 's', false]));
+//     return uniqueArray;
+// }
+// console.log(clearDuplicate([1, 2, 1, 2, 3]));
+// console.log(clearDuplicate(['a', 2, 'd', 2, 'a', 14, 14, 's', false]));
 
 
 // 6. Write a function that compares two arrays and returns true if they are identical.
@@ -80,8 +80,22 @@ console.log(clearDuplicate(['a', 2, 'd', 2, 'a', 14, 14, 's', false]));
 // console.log(isEqual([1, 2, 3, 4], [1, 2, 3, 4, 5])) -> false
 // console.log(isEqual([1, 2, 3, 4], [1, 2, 3, 4, false])) -> false
 // console.log(isEqual([1, 2, 3, 4, false], [1, 2, 3, 4, false])) -> true
+function isEqual(arr1, arr2) {
+    if (arr1.length !== arr2.length) {
+        return false;
+    }
 
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] !== arr2[i]) {
+            return false;
+        }
+    }
 
+    return true;
+}
+
+console.log(isEqual([1, 2, 3, 4], [1, 2, 3, 4]))
+console.log(isEqual([1, 2, 3, 4], [1, 2, 3, 4, 5]))
 
 // 7. Bir string ve bir char qebul eden bir function yazın.Əgər daxil olunmuş char string-də varsa char-ın yerləşdiyi indekslərin cəmini yoxdursa -1 return etsin. Məsələn salam və 'a' daxil olunarsa output 1+3=4 olmalıdır.
 
