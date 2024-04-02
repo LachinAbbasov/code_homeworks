@@ -20,16 +20,30 @@
 // console.log(join([1, 73, 99, 20], "*")) -> 1*73*99*20
 // console.log(join([1, 73, 99, 20], "/")) -> 1/73/99/20
 
-function join(arr, calc) {
-    return arr.join(calc) ;
-}
+// function join(arr, calc) {
+//     return arr.join(calc) ;
 
-console.log(join([1, 73, 99, 20], "*")) ; 
-console.log(join([1, 73, 99, 20], "/"))  ;
+// }
+
+// console.log(join([1, 73, 99, 20], "*")) ; 
+// console.log(join([1, 73, 99, 20], "/"))  ;
 
 // 3. Write a JavaScript program(function) that accepts a string as input and swaps the case of each character. For example, if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'
 // Example: 
 // console.log(convert('saLamNecesen)) -> SAlAMnECESEN
+
+function convert(str) {
+    return str.split('').map(char => {
+        if (char === char.toUpperCase()) {
+            return char.toLowerCase();
+        } else {
+            return char.toUpperCase();
+        }
+    }).join('');
+}
+
+console.log(convert('saLamNecesen'));
+
 
 
 // 4. Write a method that clears the array from all unnecessary elements, like false, undefined, empty strings, zero, null.
