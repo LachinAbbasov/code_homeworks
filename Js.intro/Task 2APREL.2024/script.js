@@ -32,23 +32,28 @@
 // Example: 
 // console.log(convert('saLamNecesen)) -> SAlAMnECESEN
 
-function convert(str) {
-    return str.split('').map(char => {
-        if (char === char.toUpperCase()) {
-            return char.toLowerCase();
-        } else {
-            return char.toUpperCase();
-        }
-    }).join('');
-}
+// function convert(str) {
+//     return str.split('').map(char => {
+//         if (char === char.toUpperCase()) {
+//             return char.toLowerCase();
+//         } else {
+//             return char.toUpperCase();
+//         }
+//     }).join('');
+// }
 
-console.log(convert('saLamNecesen'));
+// console.log(convert('saLamNecesen'));
 
 
 
 // 4. Write a method that clears the array from all unnecessary elements, like false, undefined, empty strings, zero, null.
 // console.log(clear([0, 1, false, 2, undefined, '', 3, null]); -> [1, 2, 3]
 
+function clear(arr) {
+    return arr.filter(item => item);
+}
+
+console.log(clear([0, 1, false, 2, undefined, '', 3, null]));
 
 // 5. Write a method that returns a duplicate-free array.
 // console.log(clearDuplicate([1, 2, 1, 2, 3])); -> [1, 2, 3]
