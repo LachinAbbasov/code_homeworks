@@ -5,20 +5,27 @@
 // console.log(getFirst([1, 73, 99, 20], 2)) -> [1, 73]
 // console.log(getFirst([1, 73, 99, 20], 0)) -> []
 // console.log(getFirst([1, 73, 99, 20], 4)) -> [1, 73, 99, 20]
-function getFirst(arr, n = 1) {
-    return arr.slice(0, n);
-}
 
-console.log(getFirst([1, 73, 99, 20])); // Output: 1
-console.log(getFirst([1, 73, 99, 20], 2)); // Output: [1, 73]
-console.log(getFirst([1, 73, 99, 20], 0)); // Output: []
-console.log(getFirst([1, 73, 99, 20], 4)); // Output: [1, 73, 99, 20]
+// function getFirst(arr, n = 1) {
+//     return arr.slice(0, n);
+// }
+
+// console.log(getFirst([1, 73, 99, 20])); // Output: 1
+// console.log(getFirst([1, 73, 99, 20], 2)); // Output: [1, 73]
+// console.log(getFirst([1, 73, 99, 20], 0)); // Output: []
+// console.log(getFirst([1, 73, 99, 20], 4)); // Output: [1, 73, 99, 20]
 
 
 // 2. Write a simple JavaScript function to join all elements of the following array into a string.
 // console.log(join([1, 73, 99, 20], "*")) -> 1*73*99*20
 // console.log(join([1, 73, 99, 20], "/")) -> 1/73/99/20
 
+function join(arr, calc) {
+    return arr.join(calc) ;
+}
+
+console.log(join([1, 73, 99, 20], "*")) ; 
+console.log(join([1, 73, 99, 20], "/"))  ;
 
 // 3. Write a JavaScript program(function) that accepts a string as input and swaps the case of each character. For example, if you input 'The Quick Brown Fox' the output should be 'tHE qUICK bROWN fOX'
 // Example: 
