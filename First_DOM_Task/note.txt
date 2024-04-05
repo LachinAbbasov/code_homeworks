@@ -1,0 +1,34 @@
+
+                                   HTML KODLARIM
+
+<!-- <div class="container">
+        <div class="bigdiv">
+            <h1>960 x 360 px</h1>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <div class="pixelDiv">
+                    <h3 class="pixelsizetxt">290 x 190 px</h3>
+                </div>
+                <p>Indonectetus facilis</p>
+                <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, vitae deleniti.</h5>
+                <a href="">Read More &rarr;</a>
+            </div>
+            <div class="card">
+                <div class="pixelDiv">
+                    <h3 class="pixelsizetxt">290 x 190 px</h3>
+                </div>
+                <p>Indonectetus facilis</p>
+                <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, vitae deleniti.</h5>
+                <a href="">Read More &rarr;</a>
+            </div>
+            <div class="card">
+                <div class="pixelDiv"><h3 class="pixelsizetxt">290 x 190 px</h3>
+            </div>
+            <p>Indonectetus facilis</p>
+            <h5>Lorem ipsum, dolor sit amet consectetur adipisicing elit. At, vitae deleniti.</h5>
+            <a href="">Read More &rarr;</a>
+        </div>
+    </div>
+
+    </div> -->
