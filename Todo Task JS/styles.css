@@ -75,3 +75,6 @@ body {
 .line-through {
   text-decoration: line-through;
 }
+*{
+  font-family: 'POPPINS';
+}
