@@ -1,4 +1,5 @@
 
+
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('add-todo-form');
     const input = document.getElementById('add-todo-inp');
@@ -59,18 +60,42 @@ document.addEventListener('DOMContentLoaded', function() {
         deleteButton.innerHTML = '<i class="fas fa-trash-alt"></i>';
         deleteButton.classList.add('btn', 'btn-danger', 'mx-1');
         deleteButton.addEventListener('click', function() {
-            listItem.remove();
-            updateTaskCount();
+            Swal.fire({
+                title: 'Are you sure?',
+                text: 'You won\'t be able to revert this!',
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Yes, delete it!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    listItem.remove();
+                    updateTaskCount();
+                    Swal.fire(
+                        'Deleted!',
+                        'Your todo has been deleted.',
+                        'success'
+                    );
+                }
+            });
         });
 
         const editButton = document.createElement('button');
         editButton.innerHTML = '<i class="fas fa-edit"></i>';
         editButton.classList.add('btn', 'btn-warning', 'mx-1');
         editButton.addEventListener('click', function() {
-            const newText = prompt('Edit the todo:', listItem.textContent.trim());
-            if (newText !== null) {
-                listItem.textContent = newText;
-            }
+            Swal.fire({
+                title: 'Edit Todo',
+                input: 'text',
+                inputValue: listItem.textContent.trim(),
+                showCancelButton: true,
+                confirmButtonText: 'Save',
+                showLoaderOnConfirm: true,
+                preConfirm: (editedText) => {
+                    listItem.textContent = editedText;
+                }
+            });
         });
 
         const lineThroughButton = document.createElement('button');
