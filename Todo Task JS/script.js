@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     const form = document.getElementById('add-todo-form');
     const input = document.getElementById('add-todo-inp');
@@ -24,6 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
         errorSpan.classList.add('d-none');
         addTodoToList(inputValue);
         input.value = '';
+
+    
+        Swal.fire({
+            icon: 'success',
+            title: 'To Do Added',
+            text: 'A new To Do has been added successfully!',
+        });
     });
 
     input.addEventListener('input', function() {

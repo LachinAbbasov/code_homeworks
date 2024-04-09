@@ -56,10 +56,10 @@ body {
   display: none;
 }
 
-.to-do-list {
-  list-style: none;
+.to-do-list { 
+list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0; 
 }
 
 .to-do-list li {
@@ -69,7 +69,7 @@ body {
 }
 
 .to-do-list li button {
-  margin-left: 10px;
+  margin-left:10px;
 }
 
 .line-through {
