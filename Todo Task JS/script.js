@@ -45,7 +45,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    clearAllBtn.addEventListener('click', function() {
+    clearAllBtn.addEventListener('click', function(e) {
+        e.preventDefault(a)
         todoList.innerHTML = '';
         updateTaskCount();
         clearAllBtn.classList.remove('btn-warning');
@@ -54,7 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function addTodoToList(todoText) {
         const listItem = document.createElement('li');
-        listItem.textContent = todoText;
+        const listItemContent = document.createElement('span');
+        listItemContent.textContent = todoText;
+        listItem.append(listItemContent)
 
         const deleteButton = document.createElement('button');
         deleteButton.innerHTML = '<i class="fas fa-trash-alt"></i>';
@@ -93,7 +96,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 confirmButtonText: 'Save',
                 showLoaderOnConfirm: true,
                 preConfirm: (editedText) => {
-                    listItem.textContent = editedText;
+                    listItemContent.textContent = editedText;
                 }
             });
         });
