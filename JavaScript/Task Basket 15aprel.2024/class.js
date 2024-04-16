@@ -13,13 +13,16 @@ class Product {
             this.discountPercentage = discountPercentage;
         }
         else throw new Error('discountParcentage should be between 0-100');
-        this.discountParcentage = discountPercentage;
+        
     }
 calcProfit(){
     const profit = (this.salePrice*this.discountParcentage)/100 - this.costPrice;
     return profit;
 }
 
+// calcPrice(){
+// return Number (this)
+// }
 
 
 
