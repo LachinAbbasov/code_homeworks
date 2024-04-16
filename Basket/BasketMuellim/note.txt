@@ -1,0 +1,29 @@
+(wishlist - heart icon - local Storage);
+register validation:
+username - unique, min 3 chars
+email - unique, email valid (REGEX)
+password: min 5 chars, min 1 UPPERCASE_LETTER,
+min 1 number (REGEX)
+confirm password: should match with password (REGEX)
+
+uygun input-larda error message-lar gorunsun submit-de
+
+----------------------------------------------------
+(Login page
+remember me checkbox
+- eger checked olarsa localStorage-de olmalidir data
+- eger checked olmazsa sessionStorage-de olmalidir)
+----------------------------------------------------
+(goz Icon-i - press etdikde password gorunmelidir)
+-----------------------------------------------------
+(Navbar-da basket item-larin sayini gostermek)?....
+-----------------------------------------------------
+basket table-in altinda TOTAL PRICE: umumi basket-in total
+qiymeti
+
+
+ARASHDIRMAQ
+REGEX
+BOM (Browser Object Model)
+setINterval, setTimeOut (numunelerle) (saat yazin)
+async await, Promises
