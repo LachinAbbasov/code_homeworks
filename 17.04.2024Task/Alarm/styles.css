@@ -1,0 +1,11 @@
+html ,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background:url(https://cdn.pixabay.com/photo/2018/02/16/02/03/pocket-watch-3156771_1280.jpg) no-repeat 50% 50%;
+    background-size: cover;
+};
+
+
+
