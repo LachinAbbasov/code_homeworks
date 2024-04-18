@@ -20,7 +20,7 @@ if (todoId) {
             <li class="list-group-item">title: ${todo.title}</li>
             <li class="list-group-item">completed: ${todo.completed ? "Complete!" : "Compleden't!"}</li>
           </ul>
-          <button id="goBackBtn" class="btn btn-primary mb-3">Geri Dön</button>
+          <button id="goBackBtn" class="btn btn-primary mb-3">Go Back</button>
         `;
         todoDetails.classList.remove('d-none');
         todoDetails.parentElement.classList.add(cardColor); 
@@ -30,8 +30,8 @@ if (todoId) {
         });
       })
       .catch(error => console.error('Error:', error));
-  }, 1500);
-} else {
-  
+  }, 2500);
+} 
+  else {
   console.error('Error: Todo ID is not provided');
-}
+};

@@ -20,7 +20,7 @@ function fetchData() {
                   </ul>
                 </div>
               </div>
-              <a href="detail.html"?id=${todo.id} class="btn btn-outline-warning">Detail</a>
+              <a href="detail.html?id=${todo.id}" class="btn btn-outline-warning">Detail</a>
           
             </div>
             
@@ -36,14 +36,15 @@ function fetchData() {
     const searchInput = document.getElementById('searchInput').value.toLowerCase();
     const todoCards = document.querySelectorAll('.todo-card');
     todoCards.forEach(card => {
-      const title = card.querySelector('.list-group-item:nth-child(3)').textContent.toLowerCase(); öğesi (title)
-      if (title.includes(searchInput)) {
-        card.style.display = 'block';
-      } else {
-        card.style.display = 'none';
-      }
+        const title = card.querySelector('.list-group-item:nth-child(3)').textContent.toLowerCase();
+        if (title.includes(searchInput)) {
+            card.style.display = 'block';
+        } else {
+            card.style.display = 'none';
+        }
     });
-  });
+});
+
   
  
   document.getElementById('showAllButton').addEventListener('click', () => {
