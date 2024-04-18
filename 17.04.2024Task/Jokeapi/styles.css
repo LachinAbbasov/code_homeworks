@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f3f3f3;
+}
+
+.container {
+    text-align: center;
+}
+
+.joke-container {
+    margin-top: 50px;
+}
+
+#generate-btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #f10800a2;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#generate-btn:hover {
+    background-color: #0056b3;
+}
+
+#joke-text {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
