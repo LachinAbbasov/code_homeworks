@@ -19,25 +19,18 @@ export async function getAllMovies(url) {
   }
 }
 
+export async function deleteButton(url, id) {
+  let response = null;
+  await axios.delete(url + `/${id}`)
+  .then((res) => {
+    response = res.data;
+  })
+  .catch(err=>{
+    console.log(err)
+  })
 
-export async function getMovieById(apiUrl, id) {
-  try {
-    const response = await axios.get(`${apiUrl}/movies/${id}`);
-    return response.data;
-  } catch (error) {
-    console.error('Error fetching movie by ID:', error);
-    throw error;
-  }
+  return response;
 }
 
 
-export async function updateMovieById(apiUrl, id, updatedMovieData) {
-  try {
-    const response = await axios.put(`${apiUrl}/movies/${id}`, updatedMovieData);
-    return response.data;
-  } catch (error) {
-    console.error('Error updating movie by ID:', error);
-    throw error;
-  }
-}
 
