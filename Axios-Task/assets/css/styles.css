@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  border-style: border-box;
+}
+.navbar-custom {
+    background: linear-gradient(to right,#7aff46 ,#00c6bc, #b915ff);
+  }
+
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 16px solid #aeaeae;
+    border-top: 16px solid #ff0e0e;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+  }
+  
