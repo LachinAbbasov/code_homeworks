@@ -1,0 +1,43 @@
+
+.todo-item-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .todo-title {
+    flex-grow: 1;
+    margin-right: 10px;
+  }
+  
+  .todo-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  .todo-action-button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .delete-button:hover {
+    background-color: #bd2130;
+  }
+  
+  .mark-button {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .mark-button:hover {
+    background-color: #218838;
+  }
+  
