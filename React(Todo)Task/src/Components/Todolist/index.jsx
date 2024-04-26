@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './index.css'; 
+
 
 const Todolist = ({ children }) => {
-  return <div className="todo-list-container">{children}</div>;
+  return <>{children}</>;
 };
 
 Todolist.propTypes = {
