@@ -5,7 +5,7 @@ import './index.css';
 
 const Marktodo = ({ onMark }) => {
   return (
-    <button onClick={onMark} className="mark-button">Completed</button> 
+    <button onClick={onMark} className="mark-button">Mark</button> 
   );
 };
 
