@@ -2,8 +2,9 @@
 import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
 import Swal from 'sweetalert2';
-import Todoitem from '../Todoitem/index';
 import './Add.css';
+import ToDoitem from '../../Data/Todoitem';
+
 
 
 const Addtodo = ({ todos, setTodos }) => {
@@ -15,8 +16,8 @@ const Addtodo = ({ todos, setTodos }) => {
       setError('Todo input cannot be empty!.')
       return;
     };
-    const newTodo = new Todoitem(nanoid(), new Date(), input, false);
-    setTodos([...todos, newTodo]);
+    const newTodo = new ToDoitem(nanoid(), new Date(), input, false);
+    setTodos([...todos , newTodo]);
     setInput('');
     setError('');
     Swal.fire('Added!', 'ToDo has been added.', 'success');

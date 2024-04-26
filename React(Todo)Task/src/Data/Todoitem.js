@@ -1,6 +1,6 @@
-const { nanoid } = require('nanoid');
+import { nanoid } from 'nanoid';
 
-class ToDoItem {
+export default class ToDoitem {
   constructor(title, isDone = false) {
     this.id = nanoid();
     this.title = title;
@@ -9,4 +9,3 @@ class ToDoItem {
   }
 }
 
-module.exports = ToDoItem;
