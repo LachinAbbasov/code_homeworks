@@ -16,7 +16,7 @@ const Addtodo = ({ todos, setTodos }) => {
       setError('Todo input cannot be empty!.')
       return;
     };
-    const newTodo = new ToDoitem(nanoid(), new Date(), input, false);
+    const newTodo = new ToDoitem(input, false);
     setTodos([...todos , newTodo]);
     setInput('');
     setError('');
