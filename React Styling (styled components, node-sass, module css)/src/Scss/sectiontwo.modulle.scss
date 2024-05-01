@@ -1,0 +1,28 @@
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-button {
+    margin-left: 10px; 
+    padding: 8px 12px;
+    background-color: #c5c5c5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.section-title {
+    margin-right: auto;
+}
+
+.category-button {
+    margin-left: 10px; 
+}
+
+.category-button:hover {
+    background-color: #ec3535ce;
+}

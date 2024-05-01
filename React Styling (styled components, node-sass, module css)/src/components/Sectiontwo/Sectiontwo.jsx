@@ -1,12 +1,13 @@
 import React from 'react';
 import BookCard from './Bookcard';
+import PropTypes from 'prop-types';
+import '../../Scss/sectiontwo.modulle.scss'
 
-
-function Sectiontwo({ title, books }) {
+function Sectiontwo({  books }) {
   return (
     <div className="section">
       <div className="section-header">
-        <h2 className="section-title">{title}</h2>
+        <h2 className="section-title">Latest Published items</h2>
         <div className="category-buttons">
           <button className="category-button">All</button>
           <button className="category-button">Horror</button>
@@ -20,8 +21,15 @@ function Sectiontwo({ title, books }) {
           <BookCard key={index} book={book} />
         ))}
       </div>
+
     </div>
   );
 }
 
+Sectiontwo.propTypes ={
+  books: PropTypes.arrayOf(PropTypes.object),
+  title: PropTypes.string,
+};
+
 export default Sectiontwo;
+

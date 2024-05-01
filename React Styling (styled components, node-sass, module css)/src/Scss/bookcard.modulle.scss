@@ -1,0 +1,49 @@
+.book-cards-container {
+    font-size: 0;
+    width: 100%; 
+  }
+  
+  .book-card {
+    display: inline-block;
+    width: 10%; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 2%; 
+    margin-bottom: 20px;
+    box-sizing: border-box; 
+    vertical-align: top;
+  }
+  
+  .book-image {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .book-details {
+    margin-top: 10px;
+  }
+  
+  .book-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .book-director {
+    margin-bottom: 5px;
+  }
+  
+  .book-rating {
+    margin-bottom: 5px;
+  }
+  
+  .star-icon {
+    color: gold;
+  }
+  
+  .book-price {
+    font-weight: bold;
+    color: green;
+  }
+  
