@@ -41,3 +41,9 @@
     background-color: #218838;
   }
   
+
+  .completed {
+    text-decoration: line-through;
+  }
+  
+ 
