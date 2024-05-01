@@ -1,0 +1,39 @@
+{
+    "artists": [
+      {
+        "id": 1,
+        "name": "John Doe",
+        "imgSrc": "https://www.shutterstock.com/image-photo/singer-holding-microphone-stand-performing-260nw-1039242106.jpg",
+        "genre": "Pop",
+        "country": "USA",
+        "age": 25,
+        "info": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "isVerified": true,
+        "songs": []
+      },
+      {
+        "id": 2,
+        "name": "Jane Smith",
+        "imgSrc": "https://img.freepik.com/free-photo/caucasian-female-singer-portrait-isolated-blue-studio-background-neon-light-beautiful-female-model-bright-dress-with-microphone-concept-human-emotions-facial-expression-ad-music-art_155003-30901.jpg",
+        "genre": "Rock",
+        "country": "UK",
+        "age": 30,
+        "info": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "isVerified": false,
+        "songs": []
+      },
+      {
+        "id": 3,
+        "name": "Alice Johnson",
+        "imgSrc": "https://t4.ftcdn.net/jpg/03/26/90/43/360_F_326904375_vlplqQKU8VZOCZBMBCVRZ21fXaJGzLsl.jpg",
+        "genre": "Hip Hop",
+        "country": "Canada",
+        "age": 28,
+        "info": "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        "isVerified": true,
+        "songs": []
+      }
+    ],
+    "artists_endpoint": "https://mysinger.vercel.app/artists"
+  }
+  
