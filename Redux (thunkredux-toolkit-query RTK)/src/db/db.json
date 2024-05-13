@@ -1,0 +1,25 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Inception",
+      "posterImg": "https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7825626_p_v8_ae.jpg",
+      "releaseYear": 2010,
+      "genre": "Action"
+    },
+    {
+      "id": 2,
+      "title": "Interstellar",
+      "posterImg": "https://m.media-amazon.com/images/I/91JnoM0khKL._AC_UF1000,1000_QL80_.jpg",
+      "releaseYear": 2014,
+      "genre": "Sci-Fi"
+    },
+    {
+      "id": 3,
+      "title": "The Shawshank Redemption",
+      "posterImg": "https://m.media-amazon.com/images/I/815qtzaP9iL._AC_UF894,1000_QL80_.jpg",
+      "releaseYear": 1994,
+      "genre": "Drama"
+    }
+  ]
+}

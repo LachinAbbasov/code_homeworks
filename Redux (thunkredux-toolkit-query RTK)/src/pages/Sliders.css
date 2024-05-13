@@ -1,0 +1,18 @@
+
+.slider-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .movie-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 200px; /
+  }
+  
+  .poster-image {
+    width: 100%;
+    height: auto;
+  }
+  
