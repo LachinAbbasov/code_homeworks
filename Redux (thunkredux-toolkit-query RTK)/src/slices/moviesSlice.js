@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 export const moviesApi = createApi({
   reducerPath: 'moviesApi',
-  baseQuery: fetchBaseQuery({ baseUrl: 'http://localhost:5000' }),
+  baseQuery: fetchBaseQuery({ baseUrl: 'https://json-server-vercel-theta-two.vercel.app/' }),
   endpoints: (builder) => ({
     getMovies: builder.query({
       query: () => 'movies',
