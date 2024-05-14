@@ -1,0 +1,37 @@
+ROUTING: admin side, client side
+Admin Panel pages - login, messages, dashboard, products, add product, users, orders, categories, add category
+Client Side pages - home, products, productDetail, basket, login, user, register, contact us
+FOLDER STRUCTURE: assets, components, classes, context, db, hooks, pages, routes, services, validations
+PACKAGES: mui, mui-icons, antdesign, axios, formik, yup, prop-types, react-router-dom, react-toastify, sweetalert2
+JSON-SERVER: endpoint-lər - /users /products /messages /orders /categories (5 endpoint olacaq. Hər bir endpoint üçün uyğun class yaradın classes folder-ində)
+USER (class): id, username, password, createdAt, email, profileImg, balance, role (default 'client'), basketItems (default boş array) dəyərləri var.
+USER validations (register-də - yup): username min 3 simvol və required, password min 5 simvol (1 uppercase, 1 lowercase, 1 number), confirmPassword input match olmalıdır password-la, email format düzgün olmalıdır və required. profileImg url olmalıdır və required. balance (positive, integer, required)
+MESSAGE (class): fullName, email, title, message, createdAt dəyərləri var.
+MESSAGES validations (contact us-da yup): hamısı required-dir və message min 10 simvol olmalıdır.
+ORDER (class): userId, totalPrice, createdAt, status (default pending), items (arraydir və array-dəki object-lərdə {productId, count} - bunun üçün ayrıca OrderItem class-l yarada bilərsiniz) dəyərləri var.
+CATEGORY (class): id, name dəyərləri var
+CATEGORY validations (admin panel-də add category-də): name required olmalıdır və yalnız hərflərdən ibarət ola bilər (regex)
+PRODUCT (class): id, name, salePrice, costPrice, createdAt, imgSrc, discountPercentage, description, categoryId, stockCount dəyərləri var
+PRODUCT validations (admin panel add product-da): hamısı required olmalıdır. salePrice, costPrice rəqəm olmalıdır, min sıfır olmaldır və salePrice costPrice-dan böyük olmalıdır, discountPercentage 0-100 aralığında ola bilər, imgSrc url olmaldır və required-dir, description min 10 simvol olmalıdır, stockCount min 1 olmalıdır və number, required-dir, createdAt default olaraq new Date əlavə olunacaq class-da.
+Client tərəfdə login register hazır olmalıdır (formik, yup validation ilə), Admin tərəfdə isə login hazır olmalıdır, login-siz girmək olmur admin-panelə. Routing-də qeyd etdiyim page-lər və header-lar hazır olmalıdır sabaha. client tərəfdəki user-i userId data-sını localStorage-də saxlayın və admin tərəfdə login olduqda isə adminId saxlayın. admin və user üçün context yaradıb o şəkildə istifadə edin. Yuxarıdakı folder structure-ı hazır edin və class-larınızı hazırlayın. Client tərəfdə products səhifəsi hazır olsun, yenə card-lar şəklində product-lar görünəcək. yuxarısında search input, sort select option (name-ə görə), sort (price-a görə) və filter select option (discounted, not discounted) olsun. Product Card-larda basket button (login-dən sonra işləyir) və detail button (detail page-ə aparır) olmalıdır. 
+user-larda 3 rol var: client, admin, super-admin (default clientd-dir - client registerda)
+super-admin ve admin arasindaki tek ferq super-admin admin-panelde users sehifesinde istenilen user-i admin ede biler ve ya sile biler. super-admin-i siz ozunuz json faylina elave edin (super-admin yalniz bir dene olmalidir)
+admin ve ya super-admin login olduqda admin panel-e girir ve localStorage-e uygun data dushur.
+Admin panel dashboard-da (umumi gelir-i gostereceksiniz (order-lardan), product-larin category-sine gore pie chart, ayliq satishlara gore bar chart ve elave istediyiniz data-larin dashboard-da statistikasini gostere bilersiniz)
+Admin panel-de messages sehifesinde client terefden gelen message-leri gore bilecek admin ve read ve ya delete ede bilecek
+Admin panel-de products sehifesinde antd table-inda (filter, sortlu data-lar gorunecek), edit delete button-lari olacaq
+Admin panel-de add product sehifesinde yup,formik-li form olacaq ve product elave olunub products-a naviagte olunacaq
+Admin panel-de categories sehifesinde antd table-da categories gorunecek (edit, delete olacaq)
+Admin panel-de add category-de yup,formik-li form olacaq ve category elave oluna bilecek.
+Add product sehifesinde category-leri get edib select option-in icherisinde yigacaqsiniz
+Admin panel-de orders sehifesinde admin order-leri gore bilecek antd table-da ve sifarishi hansi user-in verdiyi, ne vaxt verdiyi ve ne sifarish verdiyini gorecek (accept ve ya reject button-lari olacaq). accept etdikde order-in status-u accepted, reject click etdikde ise status rejected olaraq deyishecek
+CLIENT TEREFDE
+Home sehifesi bosh olacaq
+Products sehifesinde card-larda ve ya slider-larda product-lar gorunecek. (yuxarisinda search, sort (name, price), filter (isDiscounted)) olacaq, card-larda basket button-u olacaq, ancaq login olduqda elave ede bilecek basket-e. (user-in basketItems-ina gedib dushecek). Card-larda product-in name-i, image-i, price-i (discountlu salePrice-i) ve stock-daki sayi gorunecek, eger endirimlidirse kartin sag yuxari kuncunde On Sale yazisi goruner
+Productdetail-de hemin product-in detail-i gorunecek ve basket button olacaq.
+User register-de yup, formik-li form-unuz olacaq ve role default olaraq client gedib dushecek ve sizi login-e yonlendirecek (users-i context-e cixarin global state-e), login de eyni shekilde yup,formik-li form olacaq (client login page-de ise yalniz client-ler login ola biler admin-ler yox ve localStorage-e de uygun data saxlayin)
+Contact us-da ise iframe map ve sade bir yup,formik-li form olacaq ve form-u doldurub send etdikde messages-e post olacaq.
+Basket sehifesinde user basket-ine elave etdiyi product-lari gorecek (table-da), sayini artirib azalda bilece, product-i basket-den sile bilecek ve ya umumi basket-i temizleye bilecek ve basket table-in ashagisinda order button olacaq. order-a click etdikde user-a patch request ile basketItems array-i temizlenecek ve orders-a post request ile yuxaridaki order deyerleri ile order post olunacaq (status default pending)
+User oz sehifesine kechdikde ise, butun order-larinin siyahisini gorecek indiye qeder olan ve qarshisinda status-u da gorunecek (pending, accepted ve ya rejected) ve elave olaraq user butun data-larini edit ede bilecek icherisi user-in data-lari ile dolu olan form-la (eyni username, email istifade ede bilmez user-lar, hech bir input-u bosh qoya bilmez ve balansi yalniz artira biler)
+User order etdikden sonra oz sehifesinde order table-da order-i gorecek, eger admin admin-panel-den order-i accept ederse hemin user-in balance-indan order-in totalPrice-i qeder pulu cixacaq ve order-in status-u accepted olaraq deyishecek. Eger user order-a click edende balance-i chatmirsa orders-a post olunmayacaq ve basket temizlenmeyecek (evezine alert cixacaq)
+Optional olaraq - eger category silinerse, hemin category-de olan butun product-lar da silinmelidir
