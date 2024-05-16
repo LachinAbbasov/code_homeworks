@@ -10,21 +10,12 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// User schema
-const userSchema = new Schema({
-  username: { type: String },
-  password: { type: String },
-  email: { type: String },
-  profileImg: String,
-  balance: { type: Number },
-  role: { type: String },
-  basketItems: { type: String }
-}, { timestamps: true });
 
-const User = mongoose.model("User", userSchema);
+
+
+
 
 // CRUD operations for User
-
 // Get all users
 app.get("/api/users", async (req, res) => {
   try {
@@ -88,18 +79,8 @@ app.patch("/api/users/:id", async (req, res) => {
   }
 });
 
-// Message schema
-const messageSchema = new Schema({
-  fullName: { type: String, required: true },
-  email: { type: String, required: true },
-  title: { type: String, required: true },
-  message: { type: String, required: true }
-}, { timestamps: true });
-
-const Message = mongoose.model("Message", messageSchema);
 
 // CRUD operations for Message
-
 // Get all messages
 app.get("/api/messages", async (req, res) => {
   try {
@@ -158,23 +139,13 @@ app.patch("/api/messages/:id", async (req, res) => {
   }
 });
 
-// Order item schema
-const orderItemSchema = new Schema({
-  productId: { type: mongoose.Schema.Types.ObjectId, ref: "Product", required: true },
-  count: { type: Number, required: true }
-}, { timestamps: true });
 
-const OrderItem = mongoose.model("OrderItem", orderItemSchema);
 
-// Order schema
-const orderSchema = new Schema({
-  userId: { type: mongoose.Schema.Types.ObjectId, ref: "User", required: true },
-  totalPrice: { type: Number, required: true },
-  status: { type: String, default: "pending" },
-  items: [orderItemSchema]
-}, { timestamps: true });
 
-const Order = mongoose.model("Order", orderSchema);
+
+
+
+
 
 // CRUD operations for Order
 
@@ -236,12 +207,8 @@ app.patch("/api/orders/:id", async (req, res) => {
   }
 });
 
-// Category schema
-const categorySchema = new Schema({
-  name: { type: String, required: true }
-}, { timestamps: true });
 
-const Category = mongoose.model("Category", categorySchema);
+
 
 // CRUD operations for Category
 
@@ -303,19 +270,10 @@ app.patch("/api/categories/:id", async (req, res) => {
   }
 });
 
-// Product schema
-const productSchema = new Schema({
-  name: { type: String, required: true },
-  salePrice: { type: Number, required: true },
-  costPrice: { type: Number, required: true },
-  imgSrc: String,
-  discountPercentage: { type: Number, default: 0 },
-  description: String,
-  categoryId: { type: mongoose.Schema.Types.ObjectId, ref: "Category", required: true },
-  stockCount: { type: Number, required: true }
-}, { timestamps: true });
 
-const Product = mongoose.model("Product", productSchema);
+
+
+
 
 // CRUD operations for Product
 
